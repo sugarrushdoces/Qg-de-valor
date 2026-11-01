@@ -64,21 +64,19 @@ a:focus-visible {
   color: #93958d;
 }
 .top-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   color: #d2cec2;
-}
-.top-link span {
-    color: #D4AF37 !important;
-    -webkit-text-fill-color: #D4AF37 !important;
-  margin-left: 16px;
-  font-size: 17px;
+  text-decoration: none;
 }
 .gold-arrow {
-    color: #D4AF37 !important;
-    -webkit-text-fill-color: #D4AF37 !important;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.gold-arrow path {
+  stroke: #D4AF37 !important;
 }
 main {
   max-width: 1200px;
