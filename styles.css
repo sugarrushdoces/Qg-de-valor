@@ -67,10 +67,18 @@ a:focus-visible {
   color: #d2cec2;
 }
 .top-link span {
-  color: #d7b56c !important;
-  -webkit-text-fill-color: #d7b56c !important;
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
   margin-left: 16px;
   font-size: 17px;
+}
+.gold-arrow {
+    color: #D4AF37 !important;
+    -webkit-text-fill-color: #D4AF37 !important;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
 }
 main {
   max-width: 1200px;
@@ -448,4 +456,8 @@ footer a {
   * {
     transition: none !important;
   }
+}
+.logo {
+  width: 120px;
+  height: auto;
 }
