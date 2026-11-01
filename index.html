@@ -52,7 +52,8 @@
     </section>
     <section class="connections" id="conexoes" aria-label="Nossos canais">
       <div class="section-label"><span>EXPLORE NOSSOS CANAIS</span><span>01 — 06</span></div>
-      <a class="channel featured" href="#whatsapp"><span class="icon"><svg viewBox="0 0 24 24">
+      <!-- Coloque quando cadastrar o numero com a mensagem id="whatsapp-link" -->
+      <a class="channel featured" href="#whatsapp" target="_blank" rel="noopener noreferrer"><span class="icon"><svg viewBox="0 0 24 24">
             <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4.1A8 8 0 1 1 20 11.7Z" />
             <path d="M9 8c-.8 2 2 5 4 6l2-1 1 2c-2 3-9-2-9-5Z" />
           </svg></span><span class="channel-copy"><strong>WhatsApp</strong><small>Uma boa conversa começa com um
@@ -147,5 +148,28 @@
     </div>
   </section>
 </body>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    const numero = "5541988223209";
+
+    const mensagem =
+        "Olá! " +
+        String.fromCodePoint(0x1F44B) +
+        " Vim pelo site do QG de Valor e quero descobrir como posso aumentar minhas vendas e melhorar os resultados do meu comércio. " +
+        String.fromCodePoint(0x1F680);
+
+    const link = new URL("https://api.whatsapp.com/send");
+
+    link.searchParams.set("phone", numero);
+    link.searchParams.set("text", mensagem);
+
+    const botao = document.getElementById("whatsapp-link");
+
+    if (botao) {
+        botao.href = link.toString();
+    }
+
+});
+</script>
 </html>
