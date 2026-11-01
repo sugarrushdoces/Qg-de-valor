@@ -242,6 +242,13 @@ h1 em {
   color: var(--gold);
   font-weight: 300;
 }
+.arrowpage {
+  margin-left: auto;
+  padding-top: 8px;
+  font-size: 20px;
+  color: var(--gold);
+  font-weight: 300;
+}
 .welcome {
   text-align: center;
   font-family: Georgia, serif;
